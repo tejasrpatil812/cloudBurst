@@ -1,0 +1,41 @@
+{
+  "aws": {
+    "aws_access_key_id": "AKIA3MM6OJSMK77HOTED",
+    "aws_secret_access_key": "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",
+    "region_name": "us-east-1"
+  },
+  "app-tier": {
+    "MaxCount": 1,
+    "MinCount": 1,
+    "ImageId": "ami-05c7424f3115573a6",
+    "InstanceType": "t2.micro",
+    "KeyName": "ssh_sri",
+    "LaunchTemplate": {
+      "LaunchTemplateId": "lt-04ce6e3288d3a54a8",
+      "Version": "1"
+    },
+    "TagSpecifications": [
+      {
+        "ResourceType": "instance",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "app-tier"
+          }
+        ]
+      }
+    ],
+    "SecurityGroupIds": [
+      "sg-06f8b1cd5900238da"
+    ]
+  },
+  "sqs": {
+    "max_num_messages": 1,
+    "request_queue": {
+      "url": "https://sqs.us-east-1.amazonaws.com/782553205912/request-queue"
+    },
+    "response_queue": {
+      "url": "https://sqs.us-east-1.amazonaws.com/782553205912/response-queue"
+    }
+  }
+}

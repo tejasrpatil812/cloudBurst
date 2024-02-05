@@ -1,0 +1,24 @@
+{
+  "aws":{
+    "aws_access_key_id": "AKIA3MM6OJSMK77HOTED",
+    "aws_secret_access_key": "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",
+    "region_name": "us-east-1"
+  },
+  "sqs": {
+    "request_queue": {
+      "url": "https://sqs.us-east-1.amazonaws.com/782553205912/request-queue"
+    },
+    "response_queue": {
+      "url": "https://sqs.us-east-1.amazonaws.com/782553205912/response-queue"
+    }
+  },
+
+  "s3": {
+    "input_bucket": {
+      "name": "input-bucket-32"
+    },
+    "output_bucket": {
+      "name": "output-bucket-32"
+    }
+  }
+}
